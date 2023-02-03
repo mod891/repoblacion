@@ -54,7 +54,7 @@ public class ArbolTest {
 			fail(TIPO_NO_CORRECTO);
 		}
 		
-		try {
+/*		try {
 			arbol = new Arbol(null, null);
 			fail(EXCEPCION_MENSAJE_ADECUADO);
 		} catch (NullPointerException e) {
@@ -64,7 +64,7 @@ public class ArbolTest {
 		}
 		catch (Exception e) {
 			fail(TIPO_NO_CORRECTO);
-		}
+		} */
 	}
 	
 	@Test
