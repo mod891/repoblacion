@@ -63,8 +63,6 @@ public class Bosque {
 			}
 			existeEspecie = false;
 		}
-		
-
 		// inicialización del primer arbol 
 		nuevoX = this.generador.nextDouble(-this.getAncho()/2, this.getAncho()/2);
 		nuevoY = this.generador.nextDouble(-this.getAlto()/2,this.getAlto()/2);
@@ -91,11 +89,6 @@ public class Bosque {
 			}
 			especieInvalida = false;
 		}
-		
-		for(int i=0; i<tamanio; i++) {
-			System.out.println(arboles[i].toString());
-		}
-	
 	}
 	public void realizarCalculos() {
 	
@@ -134,14 +127,5 @@ public class Bosque {
 	}
 	public Arbol getArbolMasCentrado() {
 		return arbolMasCentrado;
-	}
-	
-	public static void main(String args[]) {
-		Bosque b = new Bosque(10,20,10);
-		b.realizarCalculos();
-		
-		System.out.println("mas alejado"+b.getArbolMasAlejado().toString());
-		System.out.println("mas centrado"+b.getArbolMasCentrado().toString());
-	
 	}
 }
